@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+</head>
+
+<body>
+    <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button">
+            Link with href
+        </a>
+        <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample1">
+            Button with data-target
+        </button>
+        <button class="btn btn-primary" data-toggle="collapse" href=".multiCollapse">
+            Button with data-target
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            This is a paragraph
+        </div>
+    </div>
+    <div class="collapse multiCollapse" id="collapseExample1">
+        <div class="card card-body">
+            This is an example 1
+        </div>
+    </div>
+    <div class="collapse multiCollapse" id="collapseExample2">
+        <div class="card card-body">
+            This is an example 2
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

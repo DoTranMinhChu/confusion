@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul class="nav nav-tabs flex-column flex-sm-row">
+            <!--  class="nav nav-fills" -->
+            <li class="nav-items">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-items dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true"
+                    aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-items">
+                <a class="nav-link " href="#">Link</a>
+            </li>
+            <li class="nav-items">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <div class="nav nav-tabs" role="tablist">
+            <a class="nav-item nav-link active" data-toggle="tab" href="#nav-home" role="tab" aria-selected="true">Home</a>
+            <a class="nav-item nav-link " data-toggle="tab" href="#nav-profile" role="tab" aria-selected="true">Profile</a>
+            <a class="nav-item nav-link " data-toggle="tab" href="#nav-contact" role="tab" aria-selected="true">Contact</a>
+        </div>
+    </nav>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel">nav-home</div>
+        <div class="tab-pane fade " id="nav-profile" role="tabpanel">nav-profile</div>
+        <div class="tab-pane fade " id="nav-contact" role="tabpanel">nav-contact</div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
