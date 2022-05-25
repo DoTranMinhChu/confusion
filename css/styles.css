@@ -37,3 +37,7 @@ header {
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
+
+.card-header{
+    cursor: pointer;
+}
