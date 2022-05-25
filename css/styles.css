@@ -38,6 +38,19 @@ header {
     padding: 10px;
 }
 
-.card-header{
+.card-header {
     cursor: pointer;
+}
+
+.carousel {
+    background: #512DA8;
+}
+
+.carousel-item {
+    height: 900px;
+}
+
+.carousel-item img {
+    min-height: 100%;
+    margin: auto;
 }
