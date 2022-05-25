@@ -142,7 +142,7 @@
                             <p>...</p>
                         </div>
                     </div>
-                    
+
                     <!-- and prev, next control -->
                     <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -154,7 +154,20 @@
                     </a>
                 </div>
             </div>
-        </div><!-- end col -->
+        </div>
+        <!-- end col -->
+    </div>
+    <!-- end div of carsousel  -->
+
+    <div class="row row content">
+        <div class="btn-group" id="carouselButton">
+            <button class="btn btn-danger btn-sm" id="carousel-pause">
+                <span class="fa fa-pause"></span>
+            </button>
+            <button class="btn btn-danger btn-sm" id="carousel-play">
+                <span class="fa fa-play"></span>
+            </button>
+        </div>
     </div>
 
     <div class="container">
@@ -260,8 +273,18 @@
     <script>
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip()
+            $("#myCarousel").carousel({ interval: 2000 });
+            $("#carousel-pause").click(function () {
+                $("#myCarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function () {
+                $("#myCarousel").carousel('cycle');
+            });
         });
+
+
     </script>
+
 </body>
 
 </html>
