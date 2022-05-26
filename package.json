@@ -1,5 +1,6 @@
 {
   "name": "confusion",
+  "homepage": "https://dotranminhchu.github.io/confusion",
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
@@ -7,11 +8,15 @@
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "scss": "node-sass -o css/ css/"
+    "build": "webpack --config webpack.config.js",
+    "scss": "node-sass -o css/ css/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "lite-server": "^2.3.0",
     "node-sass": "^7.0.1"
   },
